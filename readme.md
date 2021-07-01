@@ -23,3 +23,6 @@
     <li>click save button. it saves file you selected<li>
     <li>click close button. it closes file you selected</li>
 </ul>
+
+<h3>how install it</h3>
+<p>git clone this plugin and read manifest.json through Adobe UXP developer tool</p>
