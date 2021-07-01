@@ -26,3 +26,7 @@
 
 <h3>how install it</h3>
 <p>git clone this plugin and read manifest.json through Adobe UXP developer tool</p>
+
+<p>
+    Japanese explanation is <a href="https://kawano-shuji.com/justdiary/2021/07/01/photoshop-uxpplugin-documentboard/"> here</a>
+</p>
