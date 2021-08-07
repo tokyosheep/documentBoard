@@ -1,6 +1,6 @@
 {
   "name": "uxp-template-default-starter",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Default template for creating Adobe UXP based photoshop plugin.",
   "main": "index.js",
   "scripts": {
@@ -40,5 +40,7 @@
     "webpack": "^5.40.0",
     "webpack-cli": "^4.7.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "path-browserify": "^1.0.1"
+  }
 }

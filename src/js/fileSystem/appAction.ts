@@ -1,6 +1,5 @@
 import photoshop from "photoshop";
 import fs from "fs";
-import uxp from "uxp";
 
 import { DocumentData } from "../redux/reducer/documents";
 

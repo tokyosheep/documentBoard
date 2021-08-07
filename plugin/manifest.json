@@ -1,7 +1,7 @@
 {
   "id": "com.docBoard",
   "name": "documentBoard",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "host": [
     {
       "app": "PS",
@@ -15,7 +15,45 @@
       "type": "panel",
       "id": "mainList",
       "label": {
-        "default": "docBoard"
+        "default": "mainList"
+      },
+      "minimumSize": {
+        "width": 120,
+        "height": 140
+      },
+      "maximumSize": {
+        "width": 1200,
+        "height": 10000
+      },
+      "preferredDockedSize": {
+        "width": 150,
+        "height": 200
+      },
+      "preferredFloatingSize": {
+        "width": 300,
+        "height": 200
+      },
+      "commands": [
+        {
+          "id": "show_alert",
+          "label": {
+            "default": "Show Alert",
+            "en-US": "Show Alert (US)",
+            "es-ES": "Show Alert (ES)"
+          }
+        }
+      ]
+      ,
+      "icons": [
+        { "width": 23, "height": 23, "path": "./icons/toolIconDark.png", "scale": [ 1, 2 ], "theme": [ "darkest", "dark", "medium"]},
+        { "width": 23, "height": 23, "path": "./icons/toolIconLight.png", "scale": [ 1, 2 ], "theme": [ "lightest", "light"]}
+      ]
+    },
+    {
+      "type": "panel",
+      "id": "export",
+      "label": {
+        "default": "export"
       },
       "minimumSize": {
         "width": 120,

@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import configStore from "../redux/store/store";
 
 import MainListPanel from "./mainList";
+import ExportCompo from "./export";
 
 const store = configStore();
 
@@ -13,6 +14,16 @@ export const MainPanel = (node:HTMLElement,root:HTMLDivElement) =>{
     ReactDOM.render(
         <Provider store={store}>
             <MainListPanel />
+        </Provider>,
+        root
+    );
+    node.appendChild(root);
+}
+
+export const ExportPanel = (node:HTMLElement,root:HTMLDivElement) =>{
+    ReactDOM.render(
+        <Provider store={store}>
+            <ExportCompo />
         </Provider>,
         root
     );

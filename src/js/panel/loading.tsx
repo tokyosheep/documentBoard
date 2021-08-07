@@ -26,8 +26,9 @@ const LoadingTitile = styled.div`
 
 export const CircleLoad = () =>{
     const isLoad = useSelector((state:StateType)=>state.loading);
+    const isProgress = useSelector((state:StateType)=>state.isProgress);
     return(
-        <OverLayer isLoad={isLoad}>
+        <OverLayer isLoad={isLoad || isProgress}>
             <LoadingTitile >
                 Loading.....
             </LoadingTitile>

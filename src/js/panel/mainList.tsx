@@ -21,7 +21,6 @@ import { CircleLoad } from "./loading";
 
 import { commonBlack , commonWhite } from "../styles/commonValues";
 
-
 const GlobalStyle = createGlobalStyle`
     body{
         margin: 0;
@@ -48,7 +47,6 @@ const MainListPanel = () =>{
         callback();
         dispatchEvent(callback);
     },[]);
-    console.log("ss");
     return(
         <Wrapper>
             <GlobalStyle />
