@@ -54,7 +54,7 @@ const ButtonWrapper = styled.div`
 const ProgressLayer:(props:{progress:number[],isProgress:boolean,cancel:()=>void})=>JSX.Element = ({progress,isProgress,cancel}) =>{
     return(
         <OverLayer isProgress={isProgress}>
-            <Title>...processing</Title>
+            <Title>...progressing</Title>
             <BarWrapper>
                 <Bar progress={(progress[0]/progress[1])*100}></Bar>
             </BarWrapper>

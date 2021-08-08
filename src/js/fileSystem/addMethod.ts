@@ -27,10 +27,10 @@ const getFileNameAsSaveFormat:(filePath:string,ext:string)=>string|false = (file
     return index === -1 ? false : filePath.substring(0,index)+"."+ext;
 }
 
-const setPersistentToken = async() =>{
+export const setPersistentToken = async() =>{
     const thePersistentFolderToken = await fs.getEntryForPersistentToken(await fs.getFolder());
     console.log(thePersistentFolderToken);
-    const theNewFile = await thePersistentFolderToken.createFile("export.jpg", {overwrite: true});
+    const theNewFile = await thePersistentFolderToken.createFile("export.tiff", {overwrite: true});
     const saveFile = await fs.createSessionToken(theNewFile);
     return saveFile;
 }
@@ -59,7 +59,7 @@ const batchPlay:any = photoshop.action.batchPlay;
                             }
                         },
                         "in": {
-                            "_path": getFileNameAsSaveFormat(filePath,"tiff"),
+                            "_path": filePath,
                             "_kind": "local"
                         },
                         "documentID": 225,
@@ -107,7 +107,7 @@ const batchPlay:any = photoshop.action.batchPlay;
                             "interfaceIconFrameDimmed": false
                         },
                         "in": {
-                            "_path": getFileNameAsSaveFormat(filePath,"eps"),
+                            "_path": filePath,
                             "_kind": "local"
                         },
                         "documentID": 225,
@@ -138,7 +138,7 @@ const batchPlay:any = photoshop.action.batchPlay;
                             "_obj": "photoshop35Format"
                         },
                         "in": {
-                            "_path": getFileNameAsSaveFormat(filePath,"psd"),
+                            "_path": filePath,
                             "_kind": "local"
                         },
                         "documentID": 225,
@@ -178,7 +178,7 @@ const batchPlay:any = photoshop.action.batchPlay;
                         }
                     },
                     "in": {
-                        "_path": await saveOnFolder(),
+                        "_path": filePath,
                         "_kind": "local"
                     },
                     "documentID": 225,

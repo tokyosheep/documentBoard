@@ -11,7 +11,17 @@
   "main": "index.html",
   "manifestVersion": 4,
   "entrypoints": [
-    {
+      {
+        "type":"command",
+        "id":"save_dialog",
+        "label":"save_dialog"
+      },
+      {
+        "type":"command",
+        "id":"save_tiff",
+        "label":"save_tiff"
+      },
+      {
       "type": "panel",
       "id": "mainList",
       "label": {
@@ -73,7 +83,7 @@
       },
       "commands": [
         {
-          "id": "show_alert",
+          "id": "save_dialog",
           "label": {
             "default": "Show Alert",
             "en-US": "Show Alert (US)",

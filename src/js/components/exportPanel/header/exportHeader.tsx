@@ -14,7 +14,7 @@ const HeaderTitle = styled.h1`
 const ExportHeader = () =>{
     return(
         <HeaderCompo >
-            <HeaderTitle>export formats</HeaderTitle>
+            <HeaderTitle>export</HeaderTitle>
         </HeaderCompo>
     )
 }

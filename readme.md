@@ -30,3 +30,5 @@
 <p>
     Japanese explanation is <a href="https://kawano-shuji.com/justdiary/2021/07/01/photoshop-uxpplugin-documentboard/"> here</a>
 </p>
+
+<p>8 August 2021 update all save feature</p>
