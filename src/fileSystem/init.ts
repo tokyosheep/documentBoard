@@ -1,6 +1,6 @@
 import photoshop from "photoshop";
 
-const events = ["select","close","open","make","crop","canvasSize","imageSize","rotateEventEnum","historyStateChanged"];
+const events = ["select","close","open","make","crop","canvasSize","imageSize","rotateEventEnum","historyStateChanged","convertToProfile","save"];
 const layerEvents = ["make","select","move","delete","applyLocking","hide","show"];
 
 export const dispatchEvent:(callback:()=>void)=>void = callback =>{
