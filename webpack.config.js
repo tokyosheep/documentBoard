@@ -26,7 +26,7 @@ module.exports = {
     */
     target:"nwjs",
     // メインとなるJavaScriptファイル（エントリーポイント）
-    entry: "./src/js/main.tsx",
+    entry: "./src/main.tsx",
     // ファイルの出力設定
     output: {
       //  出力ファイルのディレクトリ名
@@ -34,7 +34,7 @@ module.exports = {
       // 出力ファイル名
       filename: "main.min.js"
     },
-    context:path.join(__dirname,"src/js"),
+    context:path.join(__dirname,"src"),
     entry:{main:"./main"},
     externals:{
       photoshop:"require('photoshop')",

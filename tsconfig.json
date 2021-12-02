@@ -1,15 +1,16 @@
-// tsconfig.json
 {
     "compilerOptions": {
       "sourceMap": true,
       // TSはECMAScript 5に変換
       "target": "es5",
+      "module": "commonjs",
       // TSのモジュールはES Modulesとして出力
       //"module": "es2015",
       // JSXの書式を有効に設定
       "jsx": "react",
       // Prefered
       "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
       "esModuleInterop": true,
       "lib": [
         "es2020",
@@ -22,9 +23,11 @@
       このオプションを有効にすれば、Babel でトランスパイルできない TypeScriptの構文を検出して警告を出す */
       "isolatedModules": true,
       // typeRoots override defaults, so be sure to include the implicit @types as well
-      "typeRoots": [
-        "node_modules/@types",
-        "node_modules/uxp-types",
-      ]
+      "baseUrl":"./",
+      "paths": {
+        "*": [
+          "node_modules/@adobexd/typings/types/*"
+        ]
+      }
     }
   }

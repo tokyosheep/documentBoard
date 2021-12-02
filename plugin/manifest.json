@@ -1,26 +1,19 @@
 {
   "id": "com.docBoard",
   "name": "documentBoard",
-  "version": "0.8.0",
+  "version": "1.0.0",
   "host": [
     {
       "app": "PS",
-      "minVersion": "22.0.0"
+      "minVersion": "23.0.0",
+      "data":{
+        "apiVersion": 2
+      }
     }
   ],
   "main": "index.html",
   "manifestVersion": 4,
   "entrypoints": [
-      {
-        "type":"command",
-        "id":"save_dialog",
-        "label":"save_dialog"
-      },
-      {
-        "type":"command",
-        "id":"save_tiff",
-        "label":"save_tiff"
-      },
       {
       "type": "panel",
       "id": "mainList",
@@ -42,17 +35,7 @@
       "preferredFloatingSize": {
         "width": 300,
         "height": 200
-      },
-      "commands": [
-        {
-          "id": "show_alert",
-          "label": {
-            "default": "Show Alert",
-            "en-US": "Show Alert (US)",
-            "es-ES": "Show Alert (ES)"
-          }
-        }
-      ]
+      }
       ,
       "icons": [
         { "width": 23, "height": 23, "path": "./icons/toolIconDark.png", "scale": [ 1, 2 ], "theme": [ "darkest", "dark", "medium"]},
@@ -80,17 +63,35 @@
       "preferredFloatingSize": {
         "width": 300,
         "height": 200
-      },
-      "commands": [
-        {
-          "id": "save_dialog",
-          "label": {
-            "default": "Show Alert",
-            "en-US": "Show Alert (US)",
-            "es-ES": "Show Alert (ES)"
-          }
-        }
+      }
+      ,
+      "icons": [
+        { "width": 23, "height": 23, "path": "./icons/toolIconDark.png", "scale": [ 1, 2 ], "theme": [ "darkest", "dark", "medium"]},
+        { "width": 23, "height": 23, "path": "./icons/toolIconLight.png", "scale": [ 1, 2 ], "theme": [ "lightest", "light"]}
       ]
+    },
+    {
+      "type": "panel",
+      "id": "detail",
+      "label": {
+        "default": "detailList"
+      },
+      "minimumSize": {
+        "width": 800,
+        "height": 500
+      },
+      "maximumSize": {
+        "width": 1300,
+        "height": 10000
+      },
+      "preferredDockedSize": {
+        "width": 150,
+        "height": 200
+      },
+      "preferredFloatingSize": {
+        "width": 300,
+        "height": 200
+      }
       ,
       "icons": [
         { "width": 23, "height": 23, "path": "./icons/toolIconDark.png", "scale": [ 1, 2 ], "theme": [ "darkest", "dark", "medium"]},
