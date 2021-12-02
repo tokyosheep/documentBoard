@@ -33,7 +33,8 @@ these functions are below.
 
 ### displaying detail of document.
 
-this panel shows detail of all documents on Photoshop.
+this panel shows detail of all documents on Photoshop.  
+the panel loads document's data automatically when you close document or open some other document.
 
 1. **name** name of the document
 2. **path** path of the document
