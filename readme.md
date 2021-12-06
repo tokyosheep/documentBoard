@@ -1,5 +1,6 @@
 # Photoshop UXP Document Board
 
+**this plugin requires higher than Photoshop 2022 version**
 
     this is a simple Photoshop UXP Plugin.
     opening a lot of file on Photoshop makes mess your work environment.
