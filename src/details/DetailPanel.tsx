@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { createGlobalStyle , ThemeProvider } from "styled-components";
-import { commonBlack , commonWhite } from "../styles/commonValues";
+import { createGlobalStyle } from "styled-components";
+import { commonBlack } from "../styles/commonValues";
 import { store } from "./app/store";
 import { Provider } from "react-redux";
 

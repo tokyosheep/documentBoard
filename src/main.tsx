@@ -1,4 +1,4 @@
-import { entrypoints } from "uxp";
+const { entrypoints } =  require("uxp");
 
 import { MainPanel } from "./panels";
 import { ExportPanel } from "./panels";
